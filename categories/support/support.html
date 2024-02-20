@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="images/e-logo.png">
+        <link href="../../autres/css/header.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="../../autres/css/footer.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> E-LuToine | Support - Contactez nous </title>
+    </head>
+    <body>
+
+<!--   Header   -->
+        <header>
+
+            <section class="logo" id="gotop">
+                <article class="titrelogo">
+                    <a href="../../accueil/index.html"><img src="images/e-logo.png"  title="Logo E-LuToine : Retour à l'Accueil" alt="Logo E-LuToine: retour à l'Accueil"></a>
+                    <h1>E-LuToine</h1>
+                </article>
+                <section class="recherche">
+                    <label for="recherche" ></label>
+                    <input type="search" id="recherche" placeholder="Recherchez-ici">
+                    <form action="../../outofservice/hs.html" method="get">
+                        <button>Rechercher</button>
+                    </form>
+                    <div class="option">
+                        <a href="../../outofservice/hs.html">Connexion</a>
+                        <a href="../../outofservice/hs.html">Inscription</a>
+                        <a href="../../outofservice/hs.html">Panier</a>
+                    </div>
+                </section>
+
+
+            </section>
+
+            <label for="toggle">☰ Menu</label>
+            <input type="checkbox" id="toggle">
+            <section class="navig">
+                <ul>
+                    <li><a href="../../accueil/index.html">Accueil</a></li>
+                    <li><a href="">Support - Nous contacter</a></li>
+                    <li><a href="../cat.html">Catégories</a></li>
+                    <li><a href="../animaux/animaux.html">Animaux</a></li>
+                    <li><a href="../musique/musique.html">Musique</a></li>
+                    <li><a href="../multimedia/multimedia.html">Multimédia</a></li>
+                    <li><a href="../mobilier/mobilier.html">Mobilier</a></li>
+                </ul>
+            </section>
+
+</header>
+
+
+<!--   Main   -->
+        <main>
+
+            <aside class="accesr">
+                <ul>
+                    <p>Accès Rapide</p>
+                    <li><a href="#gotop">Aller en haut</a></li>
+                </ul>
+            </aside>
+
+            
+            <section class="formulaire">
+                <h2>
+                    Formulaire de Contact
+                </h2>
+                <p>
+                    Vous avez une question ? Besoin d'informations ? Une quelconque informations a nous transmettre ? <br>
+                    Vous êtes au bon endroit ! <br>
+                    Remplissez ce formulaire en détaillant au maximum votre demande, et nous vous répondrons dans les plus bref délais.
+                </p>
+            </section>
+
+
+            <section class="arts">
+                <article>
+                    <!-- Code pour faire un formulaire avec une API : 
+                        <form action="https://api.web3forms.com/submit" method="post">
+                        <input type="hidden" name="access_key" value=" #clef ">
+                    -->
+                    <form  method="post">
+                        <section>
+                            <legend id="formu"> Formulaire à remplir <br>(Les champs avec * sont obligatoires)</legend>
+
+                            <label for="nom">Votre Nom :<div class="asterixe">*</div></label>
+                            <input type="text" name="nom" required placeholder="Votre nom*"/>
+
+                             <label for="prenom">Votre Prénom :<div class="asterixe">*</div></label>
+                            <input type="text" name="prenom" required placeholder="Votre prénom*"/>
+
+                             <label for="mail">Votre Mail :<div class="asterixe">*</div></label>
+                            <input type="email" name="mail" required placeholder="Votre adresse e-mail*"/>
+
+                            <label for="date">La Date<div class="asterixe">*</div></label>
+                            <input type="date" name="date" required/>
+
+                            <section class=" align">
+                                <label for="oui" value="oui">"Oui j'accepte d'être recontacter"</label>
+                                <input type="radio" name ="non" value="non" required>
+
+                                <label for="non">"Non je n'accepte pas d'être recontacter"</label>
+                                <input type="radio" name ="non">
+                            </section>
+                        </section>
+                </article>
+                <article>
+                        <section class="send">
+                            <label for="message"> Message : (Facultatif) </label>
+                            <textarea name="message"  col="10" rows="10" id="message" placeholder="Votre message"></textarea>
+                            <div class="control">
+                                <input type="reset" value="Tout Effacer"/>
+                                <input type="submit" value="Envoyer"/>
+                            </div>
+                        </section>
+                    </form>
+                
+            </section>
+        </main>
+
+<!--   Footer   -->
+        <footer>
+
+            <section>
+                <p>Besoin d'aide ? Vous pouvez nous contacter <a href="">ici</a> !</p>
+            </section>
+            <section>
+                <p> Copyright - &copy LuToine 2019-2023</p>
+            </section>
+        </footer>
+
+        
+    </body>
+</html>

@@ -1,0 +1,114 @@
+@media screen and (min-width: 1px) and (max-width: 900px) {  
+    .art {
+        max-width: 200vh;
+        margin-left: 15vh ;
+        margin-bottom: 5vh;
+        min-height: 3vh;
+    }
+
+    .art aside{
+        max-width: 80vh;
+    }
+
+    .art p{
+       font-size: 1vh; 
+    }
+    .art h2{
+        font-size: 2vh; 
+     }
+
+    .art section {
+        min-height: 38vh;
+    }
+}
+
+@media screen and (min-width: 900px) { 
+    .art {
+        margin: 15vh 10vh 5vh 35vh;
+    }
+
+    .art section{
+        min-height: 39vh;
+    }
+
+    .art aside {
+        font-size: 2vh;
+        min-width: 150px;
+    }
+}
+
+
+.art {
+     box-shadow: 10PX 10px 10px rgb(43, 41, 41);
+    border-radius:  10px;
+    background-color: rgba(250, 236, 223, 0.538);
+    height: 43vh;
+    border: black double 2px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.art:hover {
+    background-color: rgba(249, 249, 245, 0.942);
+    box-shadow: 0px 5px 10px rgb(15, 93, 170);
+}
+
+.art aside {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: purple;
+    margin-left: 5px;
+    align-self: center;
+}
+
+.art a{
+    text-decoration: none;
+} 
+
+.art section{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    border: solid grey 2px;
+    margin: 10px;
+}
+
+.art section img {
+    width: 19vh;
+    border: 1px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.art section p{
+    font-size: 2vh;
+    text-decoration: none;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.art section:hover{
+    background-color: rgb(240, 190, 159);
+    border: solid 2.5px rgb(0, 0, 0);
+}
+.peustock {
+    background-color: rgba(255, 255, 255, 0.822); 
+    font-size: 2vh;
+    color: #9E0303;
+    display: flex;
+    justify-content: center;
+}
+
+.stock {
+    background-color: rgba(255, 255, 255, 0.822); 
+    font-size: 2vh;
+    display: flex;
+    justify-content: center;
+    color: #226501;
+}
+
+.stock:hover{
+    color: rgb(21, 59, 21);
+}

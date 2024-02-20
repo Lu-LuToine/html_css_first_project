@@ -1,0 +1,118 @@
+@media screen and (min-width: 1px) and (max-width: 900px) {  
+    h2 {
+        font-size: 3vh;
+    }
+
+    .arts {
+        margin-left: 5vh;
+        margin-right: 5vh;
+        font-size: 1.5vh;
+    }
+    .arts img{
+        border-right:1px solid black ;
+        max-width: 10vh;
+    }
+    .position{
+        min-width: 30vh;
+    }
+
+    .titretext { 
+        border: none;
+    }
+}
+@media screen and (min-width: 900px) { 
+    .arts {
+    margin-left: 20vh;
+    margin-right: 10vh;
+    }
+    .arts img{
+        border-right:1px solid black ;
+        max-width: 20vh;
+    }
+    .titretext { 
+        margin-left: 2vh;
+        border: none;
+    }
+}
+
+:root {
+    --titre--bg-color : #150E12; 
+}
+
+main img{
+    border-radius:  10px;
+    transition: transform 0.5s;
+  }
+
+main img:hover{
+    border-radius:  10px;
+    transform: scale(1.2); 
+}
+
+.tout {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+}
+h2 {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.peustock{
+    color: #9E0303;
+}
+
+.arts h2 {
+    margin-top: 4vh;
+}
+
+.arts {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.position{
+    border-radius: 10px;
+    background-color: rgba(250, 245, 223, 0.538);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid black;
+    margin: 2vh;
+    box-shadow: 0px 1px 10px rgb(43, 41, 41);
+}
+
+.position:hover {
+    background-color: rgba(249, 249, 245, 0.942);
+    box-shadow: 0px 5px 10px rgb(15, 93, 170);
+}
+
+.stock p , .stock h3{
+    color: rgb(0, 0, 110);
+}
+.stock p:hover , .stock h3:hover{
+    color: rgb(128, 255, 0);
+    border: 1px solid black;
+    background-color: blue;
+}
+
+a {
+    text-decoration: none;
+}
+
+#en_stock h2{
+    background-color: var(--titre--bg-color);
+    color: #2AFF00;
+}
+
+#bientot h2{
+    background-color: var(--titre--bg-color);
+    color: #FF5900;
+}
+
+#rupture h2{
+    background-color: var(--titre--bg-color);
+    color:  #FF0000;
+}
+

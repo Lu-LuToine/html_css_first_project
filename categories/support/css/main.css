@@ -1,0 +1,184 @@
+@media screen and (min-width: 1px) and (max-width: 900px) {  
+    .formulaire {
+    margin-left: 9vh;
+    margin-right: 1vh;
+    }
+    .arts {
+        text-align: center;
+    }
+
+    .align label{
+        font-size: 2vh;
+    }
+
+    .arts input {
+        width: 35vh;
+    }
+    
+    .arts legend{
+        max-width: 50vh;
+    }
+
+    .align {
+        margin-left: 100px ;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 900px) { 
+    .formulaire, .arts{
+        margin-left: 25vh;
+        margin-right: 20vh;
+    }
+
+    .arts{
+        font-size: 3vh;
+    }
+    .align label{
+        font-size: 3vh;
+    }
+    
+    .arts input {
+        width: 70vh;
+    }
+
+    .control input{
+        width: 95vh;
+
+    }
+    
+    #message{
+        margin: 10px ;
+    }
+
+}
+
+.formulaire, #formu {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.arts section{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+:root{
+    --border: rgb(58, 76, 103);
+     --form-color : rgb(235, 226, 187);  ; 
+     --titre--bg-color : rgb(128, 145, 168); 
+ 
+}
+
+.formulaire{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+}
+
+.formulaire h2{
+    background-color: var(--titre--bg-color);
+    border-radius: 20px;
+    color: white;
+    border: var(--border) solid 3px;
+    border-bottom: var(--border) 2px solid;
+}
+
+.formulaire p{
+    padding: 10px;
+    border: var(--border) dashed 2px;
+    border-top: none;
+}
+
+
+.arts {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+
+
+.arts legend{
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    background-color: var(--border);
+    border: 0.5px solid black;
+}
+
+
+.arts article{
+    border-radius: 20px;
+}
+
+
+.arts textarea{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.arts input {
+    margin: 1vh;
+    height: 4vh;
+    border-radius: 10px ;
+    border: none;
+    background-color: var(--form-color) ;
+}
+
+.arts input:hover{ 
+
+    pointer-events: fill;
+}
+
+.arts label{
+    margin: 2vh;
+    display: flex;
+    justify-content: center;
+    min-width: 150px;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+.send{
+    border-top: 1px black solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.align{
+    margin-left: -10px;
+}
+
+.align input{
+    max-width: 3vh;
+    margin-left: 20vh;
+}
+
+.asterixe{
+    color :#9E0303;
+}
+
+.control{
+    background-color: var(--form-color);
+}
+.control input{
+    color: white;
+    display: flex;
+    justify-content: center;
+    border: dashed 1px rgb(0, 0, 0); 
+    border-radius: 0%;
+    background-color: var(--border);
+}
+
+#message{
+    border: none;
+    padding: 10px;
+    margin: 10px ;
+    border-radius: 10px ;
+    background-color: var(--form-color);
+}

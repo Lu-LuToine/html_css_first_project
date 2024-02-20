@@ -1,0 +1,337 @@
+label, #toggle{
+    display: none;
+} 
+
+@media screen and (min-width: 1px) and (max-width: 900px) {  
+
+    
+    header{
+        max-height: 60vh;
+        border-bottom: rgb(0, 0, 0) solid 5px;
+    }
+    
+    h1 {
+        font-size: 5vh;
+        margin-bottom: -2vh;
+    }
+
+    .titrelogo img {
+        border-right: 3px rgb(0, 0, 0) solid;
+        border-bottom: 3px rgb(0, 0, 0) solid ;
+        width: 15vh;
+        background-color: var(--bg-foncer);
+    
+    }
+
+    .logo :nth-child(1n+3){
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .navig{
+        border-top: white solid 5px;
+        display: none;
+        flex-direction: column;
+        background-color: var(--bg-color-foncé);
+    }
+    .navig a{
+        font-size: 3vh;
+    }
+    .navig li {
+        font-size: 3vh;
+    }
+
+    label {
+        font-size: 3vh;
+        display: inline;
+        align-content: flex-start;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+    }
+
+    #toggle:checked + .navig{
+        margin-top: 10px;
+        display: flex;
+    }
+    .accesr {
+        max-width:  15vh;
+        font-size: 1.5vh;
+    }
+    .accesr p {
+        font-size: 1vh;
+    }
+    .recherche input{
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+        font-size: 2vh;
+        max-width: 3vh;
+        max-height: 2vh;
+    }
+    
+    section .recherche, section .option, section form{
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recherche {
+        display: flex;
+        justify-content: center;
+        min-width: 5vh;
+        max-width: 100%;
+        max-height: 10vh;
+        font-size: 2vh;
+        margin-bottom: 60px;
+        margin-top: 7vh
+    }
+
+    .recherche :nth-child(1n+1){
+        margin-left: 10px;
+    }
+    
+
+    .recherche form {
+        margin-top: 2vh;
+        font-size: 2vh;
+    }
+
+    .option a{
+        margin: 2px;
+        display: flex;
+        flex-direction: column;
+        gap: 10vh;
+        padding: 5px;
+        width: 10vh;
+        box-shadow: none;
+        box-shadow: 2px 2px 2px #253069;
+    } 
+    
+}
+@media screen and (min-width: 900px) { 
+    header {
+        max-height: 40vh;
+    }
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 5vh;
+    }
+    .titrelogo img { 
+        display: flex;
+        max-height: 20vh;
+    }
+    .logo :nth-child(1n+3) {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        gap: 1vh;
+    
+    }
+    .navig li{
+        display: inline-flex;
+        border-radius: 5px;
+        flex-wrap: wrap;
+        margin-top: 5px;
+        padding: 5px;
+    }
+
+    .recherche{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .recherche input{
+        padding: 1vh;
+        max-width: 20vh;
+    }
+    .recherche button {
+        max-height: 7vh;
+        box-shadow: 10px 10px 10px #253069;
+    }
+    .recherche button:hover {
+        border: 1px solid #000000b7; 
+        box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    }
+    .option a{
+        box-shadow: 10px 10px 10px #253069;
+        margin-left: 5vh;
+        padding: 1vh;
+        display: flex;
+        flex-direction: column;
+        font-size: 2vh;
+    }
+
+    .option a:hover{
+        box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    }
+    .navig li{
+        font-size: 3vh;
+    }
+
+    .accesr{
+        font-size: 2vh;
+    }
+}
+:root{
+    --bg-foncer : #8fb7d8 ;
+    --bg-clair : #b4d2ea ;
+    --bg-color-foncé : #8EACCD ; 
+    --bg-color-clair :#42586F;
+}
+/*  ----------------------  */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    max-height: 1400px;
+    
+}
+
+
+header{ 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--bg-clair);
+    margin-bottom: 10vh;
+}
+
+.titrelogo{
+    display: flex;
+    flex-direction: row;
+}
+
+.titrelogo img {
+    border-right: 3px rgb(0, 0, 0) solid;
+    border-bottom: 3px rgb(0, 0, 0) solid ;
+    background-color: var(--bg-foncer);
+}
+.logo h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-self: center;
+    border: 2px rgb(0, 0, 0) double;
+    color: rgb(0, 0, 0);
+    background-color: var(--bg-foncer);
+}
+
+
+
+.navig {
+    /* Placement */
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 5px;
+    background-color: #253069;
+}
+
+.navig li{
+    box-shadow: #95b1cf 5px 5px 5px;
+    background-color: var(--bg-color-clair);
+}
+
+.navig li:hover{
+    border: solid black 1px;
+    background-color: #5991a3;
+}
+
+.navig a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.navig a:hover{
+    color: rgb(0, 0, 0);
+}
+
+
+.accesr {
+    border-radius: 10px ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #176B87;
+    position: fixed;
+}
+
+.accesr a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.accesr a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.accesr li, .accesr ul {
+    border-radius: 10px ;
+    border: rgb(0, 0, 0) solid 1px;
+    list-style-type: none;
+    padding: 10px;    
+}
+
+.accesr p{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.accesr li:hover{
+    background-color: #64ccc59d ;
+}
+
+
+
+.recherche a {
+    text-decoration: none;
+}
+
+.recherche input{
+    padding: 1vh;
+    max-width: 20vh;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.recherche button {
+    max-height: 7vh;
+    justify-content: space-between;
+    color: #253069;
+    border: white solid 1px;
+    border-radius: 5px;
+    margin-top: -4px;
+}
+.recherche button:hover {
+    border: 1px solid #000000b7; 
+    color:  white;
+    background-color: #192149;
+    border: black solid 1px;
+    justify-content: space-between;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.option, .recherche{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.option a {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    color: #253069;
+    border: white solid 1px;
+    border-radius: 5px;
+}
+
+.option a:hover {
+    background-color: #192149;
+    border: black solid 1px;
+    justify-content: space-between;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
